@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import { pocketbase } from "../lib/pocketbase";
+import { pocketbase, getData } from "../lib/pocketbase";
 import { RecordModel } from "pocketbase";
 import Card from "../components/Card/Card";
 import Link from "next/link";
@@ -14,9 +14,9 @@ export const HomePage: React.FC = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const result = await getPosts();
-        setItems(result);
-        console.log(result);
+        const result = await getData();
+        setItems(result.items);
+        console.log(result.items);
       } catch (error) {
         setError("Error"); 
       }

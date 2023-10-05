@@ -2,7 +2,8 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  /* config options here */
+  basePath: '/next.js_first-pr',
+  assetPrefix: '/next.js_first-pr/',
 }
  
 module.exports = nextConfig

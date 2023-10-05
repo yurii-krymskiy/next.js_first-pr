@@ -9,11 +9,16 @@ import Link from "next/link";
 export const HomePage: React.FC = () => {
   const { getPosts } = pocketbase();
   const [items, setItems] = useState<RecordModel[]>([]);
+  const [error, setError] = useState<string | null>(null); 
 
   useEffect(() => {
     const loadData = async () => {
-      const result = await getPosts();
-      setItems(result);
+      try {
+        const result = await getPosts();
+        setItems(result);
+      } catch (error) {
+        setError("Error"); 
+      }
     };
 
     loadData();

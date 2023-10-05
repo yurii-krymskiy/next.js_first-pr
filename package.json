@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://yurii-krymskiy.github.io/next.js_first-pr/",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

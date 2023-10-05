@@ -2,22 +2,22 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yurii-krymskiy.github.io/next.js_first-pr",
+  "homepage": "https://yurii-krymskiy.github.io/next.js_first-pr/",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && touch ./out/.nojekyll && gh-pages -d out -t true"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "next": "^13.5.4",
     "pocketbase": "^0.18.0",
     "pocketbase-sdk": "^0.0.9",
     "react": "^18",
-    "react-dom": "^18",
-    "touch-cli": "^0.0.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -26,7 +26,6 @@
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "^13.5.4",
-    "gh-pages": "^6.0.0",
     "postcss": "^8",
     "tailwindcss": "^3",
     "typescript": "^5"

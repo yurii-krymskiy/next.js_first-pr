@@ -44,7 +44,7 @@ export const HomePage: React.FC = () => {
                 shortdes={shortdes}
                 date={date}
               >
-                <Link href={`./posts/${id}`} className="mt-4" title={title}>
+                <Link href={`/posts/${id}`} as={`/posts/${id}`} className="mt-4" title={title}>
                   Visit
                 </Link>
               </Card>

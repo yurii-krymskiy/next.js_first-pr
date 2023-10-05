@@ -1,0 +1,19 @@
+@media (max-width: 640px) {
+  .bg-F1F0E8 {
+    background-color: #F1F0E8;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction:column
+  }
+}
+
+@media (min-width: 641px) {
+  .bg-F1F0E8 {
+    width: 300px;
+    background-color: #F1F0E8;
+    margin: 10px;
+    height: 300px;
+  }
+}
+

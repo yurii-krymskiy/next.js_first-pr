@@ -2,14 +2,14 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://yurii-krymskiy.github.io/next.js_first-pr/",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .next" 
   },
   "dependencies": {
     "next": "^13.5.4",

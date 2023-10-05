@@ -2,6 +2,6 @@
   "/_not-found": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
-  "/pages/page": "/pages",
-  "/posts/[id]/page": "/posts/[id]"
+  "/posts/[id]/page": "/posts/[id]",
+  "/pages/page": "/pages"
 }

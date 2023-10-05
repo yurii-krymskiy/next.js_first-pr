@@ -38,7 +38,7 @@ const PostPage: React.FC<pageProps> = ({ params }) => {
         const foundPost = result.find((p) => p.id === params.id);
         setPost(foundPost || null);
 
-        const result2 = await getComment(); // Завантажує всі коментарі
+        const result2 = await getComment(); 
         const filteredPosts = result2.record.filter(comment => comment.personalId === params.id);
         setCommentList(filteredPosts);
   

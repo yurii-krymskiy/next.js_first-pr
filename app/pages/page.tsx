@@ -31,6 +31,8 @@ export const HomePage: React.FC = () => {
           Welcome to main page
         </h1>
 
+        {error ? "Error" : ''}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 bg-EEE0C9 p-4">
           {items.map(({ id, title, shortdes, date, fulldesc, url }) => (
             <React.Fragment key={id}>

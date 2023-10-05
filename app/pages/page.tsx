@@ -23,7 +23,7 @@ export const HomePage: React.FC = () => {
     <div>
       <main className="bg-ADC4CE p-4 flex flex-col justify-center items-center bg-cover bg-center min-h-screen">
         <h1 className="text-3xl font-semibold mb-3 text-center mx-auto">
-          Ласкаво просимо на головну сторінку
+          Welcome to main page
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 bg-EEE0C9 p-4">

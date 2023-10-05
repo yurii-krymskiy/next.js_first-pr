@@ -1,6 +1,6 @@
-# My Next.js Comment Platform
+# My Next.js Blogging Platform
 
-Welcome to the My Next.js Comment Platform! This platform is built using Next.js and leverages various technologies to create a user-friendly commenting system.
+Welcome to the My Next.js Blogging Platform! This platform is built using Next.js and leverages various technologies to create a user-friendly commenting system.
 
 ## Technologies Used
 

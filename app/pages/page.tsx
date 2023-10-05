@@ -16,6 +16,7 @@ export const HomePage: React.FC = () => {
       try {
         const result = await getPosts();
         setItems(result);
+        console.log(result);
       } catch (error) {
         setError("Error"); 
       }
